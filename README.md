@@ -116,3 +116,45 @@ def add(a: int, b: int) -> int:
 ```
 
 Tools like `mypy` or editors with static analysis can then check types **before runtime**, improving reliability without losing Python’s flexibility.
+
+## 🧪 Testing
+
+To run the test suite with `pytest`:
+
+```bash
+python -m pip install .[dev]
+py -m pytest
+```
+
+To generate a test coverage report:
+```bash
+py -m pytest --cov=imppkg
+```
+
+Example Output:
+```
+Name                    Stmts   Miss  Cover
+-------------------------------------------
+src/imppkg/__init__.py      0      0   100%
+src/imppkg/harmonic_mean.c  --    --    C extension
+-------------------------------------------
+TOTAL                       0      0   100%
+```
+
+## Tox (Optional)
+
+To test across multiple environments automatically, use tox:
+
+```
+# tox.ini
+[tox]
+envlist = py38, py39, py310
+
+[testenv]
+deps = pytest
+commands = pytest
+```
+
+```bash
+tox
+```
