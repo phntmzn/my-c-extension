@@ -1,18 +1,16 @@
 # mycext
 
-A simple Python package that demonstrates how to create and integrate a C extension. It provides a `square(x)` function implemented in C for performance.
+A simple Python package that demonstrates how to create and integrate a C extension. It provides a `harmonic_mean(x)` function implemented in C for performance.
 
-## 🔧 Features
+## Features
 
-- ✅ Written in C for speed.
-- ✅ Integrated with Python using `setuptools`.
-- ✅ Packaged using `pyproject.toml`.
+- Written in C for speed
+- Integrated with Python using `setuptools` and `pyproject.toml`
+- Easily installed into a virtual environment
 
-## 📦 Installation
-
-Build and install the package locally:
+## Installation
 
 ```bash
-git clone https://github.com/yourusername/mycext.git
+git clone https://github.com/phntmzn/mycext.git
 cd mycext
 python -m pip install .
