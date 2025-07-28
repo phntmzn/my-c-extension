@@ -116,3 +116,17 @@ def add(a: int, b: int) -> int:
 ```
 
 Tools like `mypy` or editors with static analysis can then check types **before runtime**, improving reliability without losing Python’s flexibility.
+
+----------
+how to set up a GitHub Actions workflow to run your tests and type checks
+```
+mycext/
+├── .github/
+│   └── workflows/
+│       └── ci.yml        <-- You’ll create this
+├── src/
+├── test/
+├── tox.ini
+├── pyproject.toml
+```
+
