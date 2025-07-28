@@ -14,3 +14,16 @@ A simple Python package that demonstrates how to create and integrate a C extens
 git clone https://github.com/phntmzn/mycext.git
 cd mycext
 python -m pip install .
+
+---
+
+## ✅ Final Notes
+
+To build and test:
+
+```bash
+cd mycext
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install .
+python benchmark.py
