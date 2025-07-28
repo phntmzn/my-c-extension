@@ -116,5 +116,3 @@ def add(a: int, b: int) -> int:
 ```
 
 Tools like `mypy` or editors with static analysis can then check types **before runtime**, improving reliability without losing Python’s flexibility.
-
-Let me know if you want to see examples where duck typing leads to subtle bugs—or how to enforce structural typing with `typing.Protocol`.
