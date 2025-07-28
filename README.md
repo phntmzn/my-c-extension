@@ -16,3 +16,27 @@ Build and install the package locally:
 git clone https://github.com/yourusername/mycext.git
 cd mycext
 python -m pip install .
+```
+
+## Create a virtual environment using venv
+
+```bash
+py -3.10 -m venv .venv
+```
+
+## Activate the environment
+
+```bash
+source .venv/bin/activate
+```
+
+## Upgrade pip and install dependencies
+```bash
+python -m pip install --upgrade pip setuptools wheel
+```
+
+## Install the package locally
+
+```bash
+python -m pip install .
+```
