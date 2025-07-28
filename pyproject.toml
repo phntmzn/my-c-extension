@@ -1,3 +1,21 @@
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "mycext"
+version = "0.1.0"
+description = "A simple C extension example for harmonic mean"
+authors = [{name = "phntmzn"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.7"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.ext-modules]
+harmonic_mean = {sources = ["src/imppkg/harmonic_mean.c"], name = "imppkg.harmonic_mean"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
